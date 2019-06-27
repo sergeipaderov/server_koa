@@ -1,4 +1,4 @@
-extends ../_template-admin
+extends /_template-admin
 
 block variables
   - var title = 'Admin page'
@@ -30,7 +30,7 @@ block content
               input(name="years" type="number").form-skill__input
             .form__btns.form-skill__input-line
               button(type="submit").button Сохранить
-          form.form-upload(action='/admin/upload' method="POST" enctype="application/x-www-form-urlencoded")
+          form.form-upload(action='/admin/upload' method="POST" enctype="multipart/form-data")
             .form-title Добавить товар
             if (msgfile)
               .status= msgfile

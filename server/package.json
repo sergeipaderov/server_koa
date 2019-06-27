@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "nodemon --ignore temp/ app"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-body": "^4.1.0",
+    "koa-flash-simple": "0.0.3",
     "koa-pug": "^3.0.0-2",
     "koa-router": "^7.4.0",
     "koa-session": "^5.12.0",
